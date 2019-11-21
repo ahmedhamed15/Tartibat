@@ -1,0 +1,65 @@
+.about-us {
+    .container {
+        position: relative;
+        padding: 150px 60px 80px;
+    }
+    .team-members {
+        .member-img {
+            border-radius: 50%;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            &:hover {
+                .member-overlay {
+                    top: 0;
+                    bottom: 0;
+                }
+            }
+            .member-overlay {
+                background-color: rgba(0, 0, 0, 0.7);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                transition: all 0.3s ease-in-out;
+                cursor: help;
+                .member-name {
+                    color: $lightColor;
+                    margin-top: 50px;
+                    font-size: 18px;
+                }
+                .member-social-media {
+                    li {
+                        display: inline-block;
+                        a {
+                            color: $lightColor;
+                            margin-right: 15px !important;
+                            font-size: 20px;
+                            transition: all 0.3s ease-in-out;
+                            &:hover {
+                                color: $mainColor !important;
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                margin: 0 !important
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .team-members-women {
+        .member-img {
+            background-color: $girlsColor;
+        }
+    }
+    .team-members-men {
+        .member-img {
+            background-color: $boysColor;
+        }
+    }
+}

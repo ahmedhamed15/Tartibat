@@ -1,0 +1,107 @@
+.services {
+    .container {
+        position: relative;
+        padding: 150px 60px 130px;
+        .title-with-dot {
+            &:before {
+                background-color: #bddceb !important;
+            }
+        }
+        .service {
+            margin-bottom: 200px;
+            .service-brief {
+                p {
+                    font-weight: 600;
+                    padding-left: 8rem;
+                }
+            }
+            .request-service {
+                text-align: center;
+                a.btn {
+                    border-radius: 20px;
+                    color: #FFF;
+                    padding: 8px 25px;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &:last-of-type {
+                margin-bottom: 0 !important;
+            }
+            &:first-of-type {
+                margin-top: 200px !important;
+            }
+            &.thinking,
+            &.planning {
+                .request-service {
+                    a.btn {
+                        background-color: #ca1f3a;
+                        &:hover {
+                            background-color: $lightColor;
+                            color: #ca1f3a;
+                            border: 1px solid #ca1f3a;
+                        }
+                    }
+                }
+                .service-brief {
+                    p {
+                        color: #ca1f3a;
+                    }
+                }
+            }
+            &.design,
+            &.organize {
+                .request-service {
+                    a.btn {
+                        background-color: #e8c31c;
+                        &:hover {
+                            background-color: $lightColor;
+                            color: #e8c31c;
+                            border: 1px solid #e8c31c;
+                        }
+                    }
+                }
+                .service-brief {
+                    p {
+                        color: #e8c31c;
+                    }
+                }
+            }
+            &.write,
+            &.programming {
+                .request-service {
+                    a.btn {
+                        background-color: #6b9fb0;
+                        &:hover {
+                            background-color: $lightColor;
+                            color: #6b9fb0;
+                            border: 1px solid #6b9fb0;
+                        }
+                    }
+                }
+                .service-brief {
+                    p {
+                        color: #6b9fb0;
+                    }
+                }
+            }
+            &.managing,
+            &.photographing {
+                .request-service {
+                    a.btn {
+                        background-color: #a5c065;
+                        &:hover {
+                            background-color: $lightColor;
+                            color: #a5c065;
+                            border: 1px solid #a5c065;
+                        }
+                    }
+                }
+                .service-brief {
+                    p {
+                        color: #a5c065;
+                    }
+                }
+            }
+        }
+    }
+}

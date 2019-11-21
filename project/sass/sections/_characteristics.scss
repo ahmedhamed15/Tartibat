@@ -1,0 +1,35 @@
+.characteristics {
+    .container {
+        position: relative;
+        padding: 150px 60px 130px;
+        .sub-characteristic {
+            margin-bottom: 200px;
+            &:last-of-type {
+                margin-bottom: 0 !important;
+            }
+            &:first-of-type {
+                margin-top: 200px !important;
+            }
+        }
+        .title-with-dot {
+            &:before {
+                background-color: #ca1f3a !important;
+            }
+        }
+        .char-content-right {
+            padding-top: 55px;
+            img {
+                margin-bottom: 10px !important;
+            }
+        }
+        a.char-title {
+            color: #888;
+            font-size: 37px;
+            font-weight: 600;
+        }
+        .main-char-img {
+            padding-top: 38px;
+            text-align: center;
+        }
+    }
+}
